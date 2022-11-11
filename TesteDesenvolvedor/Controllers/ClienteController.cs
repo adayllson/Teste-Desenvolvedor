@@ -84,5 +84,16 @@ namespace TesteDesenvolvedor.Controllers
 
             return View(cliente);
         }
+
+        [HttpPost]
+        public IActionResult Deletar(Cliente cliente)
+        {
+            var clienteBanco = _context.Clientes.Find(cliente.Id);
+
+            _context.Clientes.Remove(clienteBanco);
+            _context.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
