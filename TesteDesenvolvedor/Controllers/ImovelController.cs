@@ -48,18 +48,58 @@ namespace TesteDesenvolvedor.Controllers
 
             return View(imovel);
         }
+
+         [HttpPost]
+        public IActionResult Editar(Imovel imovel)
+        {
+            var imovelBanco = _context.Imoveis.Find(imovel.Id);
+
+            imovelBanco.TipoNegocio = imovel.TipoNegocio;
+            imovelBanco.Cliente = imovel.Cliente;
+            imovelBanco.ValorImovel = imovel.ValorImovel;
+            imovelBanco.DataPublicacao = imovel.DataPublicacao;
+            imovelBanco.Endereco = imovel.Endereco;
+            imovelBanco.Descricao = imovel.Descricao;
+
+            _context.Imoveis.Update(imovelBanco);
+            _context.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult Detalhes(int id)
+        {
+            var imovel = _context.Imoveis.Find(id);
+
+            if (imovel == null)
+                return RedirectToAction(nameof(Index));
+
+            return View(imovel);
+        }
+
+        public IActionResult Deletar(int id)
+        {
+             var imovel = _context.Imoveis.Find(id);
+
+            if (imovel == null)
+                return RedirectToAction(nameof(Index));
+
+            return View(imovel);
+        }
+
+        [HttpPost]
+        public IActionResult Deletar(Imovel imovel)
+        {
+            var imovelBanco = _context.Imoveis.Find(imovel.Id);
+
+            _context.Imoveis.Remove(imovelBanco);
+            _context.SaveChanges();
+
+            return RedirectToAction(nameof(Index));
+        }
         
         
         
-        // public IActionResult Criar(Imovel imovel)
-        // {
-        //     if (ModelState.IsValid)
-        //     {
-        //         _context.Clientes.Add(cliente);
-        //         _context.SaveChanges();
-        //         return RedirectToAction(nameof(Index));
-        //     }
-        //     return View(cliente);
-        // }
+        
     }
 }

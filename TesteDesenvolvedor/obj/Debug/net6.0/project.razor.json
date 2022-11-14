@@ -16333,8 +16333,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Repositórios\\Teste-Desenvolvedor\\TesteDesenvolvedor\\Views\\Imovel\\Deletar.cshtml",
+      "TargetPath": "Views\\Imovel\\Deletar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Repositórios\\Teste-Desenvolvedor\\TesteDesenvolvedor\\Views\\Cliente\\Detalhes.cshtml",
       "TargetPath": "Views\\Cliente\\Detalhes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Repositórios\\Teste-Desenvolvedor\\TesteDesenvolvedor\\Views\\Imovel\\Detalhes.cshtml",
+      "TargetPath": "Views\\Imovel\\Detalhes.cshtml",
       "FileKind": "mvc"
     },
     {

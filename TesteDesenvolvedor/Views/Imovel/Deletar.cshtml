@@ -1,0 +1,37 @@
+@model TesteDesenvolvedor.Models.Imovel
+
+@{
+    ViewData["Title"] = "Remover Imóvel";
+}
+
+<h2 style="color: red;">Remover Imóvel</h2>
+
+</hr>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.TipoNegocio)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Cliente)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.ValorImovel)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.DataPublicacao)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(x => x.Endereco)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Endereco)
+        </dt>
+    </dl>
+</div>
+<form asp-action="Deletar">
+    <input type="submit" value="Deletar" class="btn btn-danger btn-sm"/> 
+    <a asp-action="Index" class="btn btn-primary btn-sm">Voltar</a>
+</form>
+
