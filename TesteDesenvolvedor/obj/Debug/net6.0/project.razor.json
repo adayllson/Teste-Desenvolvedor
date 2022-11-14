@@ -16343,6 +16343,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Repositórios\\Teste-Desenvolvedor\\TesteDesenvolvedor\\Views\\Imovel\\Editar.cshtml",
+      "TargetPath": "Views\\Imovel\\Editar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Repositórios\\Teste-Desenvolvedor\\TesteDesenvolvedor\\Views\\Cliente\\Index.cshtml",
       "TargetPath": "Views\\Cliente\\Index.cshtml",
       "FileKind": "mvc"

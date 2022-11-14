@@ -12,7 +12,7 @@ namespace TesteDesenvolvedor.Models
         public string TipoNegocio { get; set; }
         public string Cliente { get; set; }
         public double ValorImovel { get; set; }
-        public string DataPublicacao { get; set; }
+        public DateTime DataPublicacao { get; set; }
         public string Descricao { get; set; }
         public string Endereco { get; set; }
     }

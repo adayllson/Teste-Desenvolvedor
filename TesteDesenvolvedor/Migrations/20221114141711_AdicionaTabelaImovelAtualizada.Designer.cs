@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TesteDesenvolvedor.Context;
 
@@ -11,9 +12,11 @@ using TesteDesenvolvedor.Context;
 namespace TesteDesenvolvedor.Migrations
 {
     [DbContext(typeof(ImobiliariaContext))]
-    partial class ImobiliariaContextModelSnapshot : ModelSnapshot
+    [Migration("20221114141711_AdicionaTabelaImovelAtualizada")]
+    partial class AdicionaTabelaImovelAtualizada
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

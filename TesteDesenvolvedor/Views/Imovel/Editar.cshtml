@@ -1,17 +1,16 @@
 @model TesteDesenvolvedor.Models.Imovel;
 
 @{
-    ViewData["Title"] = "Cadastrar novo imovel";
+    ViewData["Title"] = "Editar imovel";
 }
 
-<h2>Cadastro de Imóveis</h2>
+<h2>Editar Imóvel</h2>
 
-<hr/>
-
+<hr />
 
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Criar">
+        <form asp-action="Editar">
             <div class="form-group">
                 <label asp-for="TipoNegocio" class="control-label">Tipo de Anúncio</label>
                 <select class="form-select" aria-label="Default select example">
@@ -22,15 +21,15 @@
             </div>
             <div class="form-group">
                 <label asp-for="Cliente" class="control-label">Anunciante</label>
-                <input asp-for="Cliente" class="form-control" /> 
+                <input asp-for="Cliente" class="form-control" />
             </div>
             <div class="form-group">
                 <label asp-for="ValorImovel" class="control-label">Valor</label>
-                <input asp-for="ValorImovel" class="form-control" /> 
+                <input asp-for="ValorImovel" class="form-control" />
             </div>
             <br>
             <div class="form-group">
-                <input type="submit" value="Cadastrar" class="btn btn-primary btn-sm" /> |
+                <input type="submit" value="Editar" class="btn btn-primary btn-sm" /> |
                 <a asp-action="Index" class="btn btn-danger btn-sm">Cancelar</a>
             </div>
         </form>
@@ -38,23 +37,16 @@
     </div>
     <div class="col-md-4">
         <div class="form-group">
-                <label asp-for="DataPublicacao" class="control-label">Data de Publicação</label>
-                <input asp-for="DataPublicacao" type="date" class="form-control" />
-        </div>
+            <label asp-for="DataPublicacao" class="control-label">Data de Publicação</label>
+            <input asp-for="DataPublicacao" type="date" class="form-control" />
+            </div>
         <div class="form-group">
-                <label asp-for="Endereco" class="control-label">Endereço</label>
-                <input asp-for="Endereco" class="form-control" /> 
-        </div>
+            <label asp-for="Endereco" class="control-label">Endereço</label>
+            <input asp-for="Endereco" class="form-control" />
+             </div>
         <div class="form-group">
-                <label asp-for="Descricao" class="control-label">Descrição</label>
-                <textarea class="form-control" rows="3" placeholder="Sobre o imóvel..."></textarea> 
-        </div>
+            <label asp-for="Descricao" class="control-label">Descrição</label>
+            <textarea class="form-control" rows="3" placeholder="Sobre o imóvel..."></textarea>
     </div>
-
-    
+    </div>
 </div>
-
-
-
-
-
