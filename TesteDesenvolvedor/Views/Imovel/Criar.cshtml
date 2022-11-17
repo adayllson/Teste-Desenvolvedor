@@ -6,27 +6,31 @@
 
 <h2>Cadastro de Imóveis</h2>
 
-<hr/>
+<hr />
 
 
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Criar">
             <div class="form-group">
-                <label asp-for="TipoNegocio" class="control-label">Tipo de Anúncio</label>
-                <select class="form-select" aria-label="Default select example">
+                <label asp-for="TipoNegocio" class="control-label"><strong>Tipo de Anúncio</strong></label>
+                <select asp-for="TipoNegocio" class="form-select" aria-label="Default select example">
                     <option selected>Selecione</option>
-                    <option value="1">Aluguel</option>
-                    <option value="2">Venda</option>
+                    <option value="Aluguel">Aluguel</option>
+                    <option value="Venda">Venda</option>
                 </select>
             </div>
             <div class="form-group">
-                <label asp-for="Cliente" class="control-label">Anunciante</label>
-                <input asp-for="Cliente" class="form-control" /> 
+                <label asp-for="Cliente" class="control-label"><strong>Anunciante</strong></label>
+                <input asp-for="Cliente" class="form-control" />
             </div>
             <div class="form-group">
-                <label asp-for="ValorImovel" class="control-label">Valor</label>
-                <input asp-for="ValorImovel" class="form-control" /> 
+                <label asp-for="ValorImovel" class="control-label"><strong>Valor</strong></label>
+                <input asp-for="ValorImovel" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Descricao" class="control-label"><strong>Descrição</strong></label>
+                <textarea asp-for="Descricao" class="form-control" rows="3" placeholder="Sobre o imóvel..."></textarea>
             </div>
             <br>
             <div class="form-group">
@@ -37,24 +41,41 @@
         </hr>
     </div>
     <div class="col-md-4">
-        <div class="form-group">
-                <label asp-for="DataPublicacao" class="control-label">Data de Publicação</label>
-                <input asp-for="DataPublicacao" type="date" class="form-control" />
-        </div>
-        <div class="form-group">
-                <label asp-for="Endereco" class="control-label">Endereço</label>
-                <input asp-for="Endereco" class="form-control" /> 
-        </div>
-        <div class="form-group">
-                <label asp-for="Descricao" class="control-label">Descrição</label>
-                <textarea class="form-control" rows="3" placeholder="Sobre o imóvel..."></textarea> 
-        </div>
+        <form asp-action="Criar">
+            <div class="form-group">
+                <label asp-for="Endereco" class="control-label"><strong>Endereço:</strong></label>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label asp-for="Endereco" class="control-label">CEP</label>
+                        <input asp-for="Endereco" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Endereco" class="control-label">Endereço</label>
+                    <input asp-for="Endereco" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="DataPublicacao" class="control-label"><strong>Data de Publicação</strong></label>
+                    <input asp-for="DataPublicacao" type="date" class="form-control" />
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+    <div class="col-md-4">
+        <form asp-action="Criar">
+            <div class="col-md-6">
+                <div class="form-group">
+                <label asp-for="Endereco" class="control-label">Cidade</label>
+                <input asp-for="Endereco" class="form-control" />
+            </div>
+            </div>
+            
+        </form>
+
     </div>
 
-    
+
 </div>
-
-
-
-
-
