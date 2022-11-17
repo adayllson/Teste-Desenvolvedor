@@ -13,10 +13,10 @@
         <form asp-action="Editar">
             <div class="form-group">
                 <label asp-for="TipoNegocio" class="control-label">Tipo de Anúncio</label>
-                <select class="form-select" aria-label="Default select example">
+                <select asp-for="TipoNegocio" class="form-select" aria-label="Default select example">
                     <option selected>Selecione</option>
-                    <option value="1">Aluguel</option>
-                    <option value="2">Venda</option>
+                    <option value="Aluguel">Aluguel</option>
+                    <option value="Venda">Venda</option>
                 </select>
             </div>
             <div class="form-group">
@@ -39,14 +39,16 @@
         <div class="form-group">
             <label asp-for="DataPublicacao" class="control-label">Data de Publicação</label>
             <input asp-for="DataPublicacao" type="date" class="form-control" />
-            </div>
+        </div>
         <div class="form-group">
             <label asp-for="Endereco" class="control-label">Endereço</label>
             <input asp-for="Endereco" class="form-control" />
-             </div>
+        </div>
         <div class="form-group">
             <label asp-for="Descricao" class="control-label">Descrição</label>
-            <textarea class="form-control" rows="3" placeholder="Sobre o imóvel..."></textarea>
-    </div>
+            <textarea asp-for="Descricao" class="form-control" rows="3" placeholder="Sobre o imóvel..."></textarea>
+        </div>
     </div>
 </div>
+
+
