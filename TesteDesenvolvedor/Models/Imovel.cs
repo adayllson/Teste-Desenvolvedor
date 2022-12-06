@@ -8,7 +8,7 @@ namespace TesteDesenvolvedor.Models
 { 
     
     public class Imovel
-    {
+    {   
         public int Id { get; set; }
         public string TipoNegocio { get; set; }
         public string Cliente { get; set; }
