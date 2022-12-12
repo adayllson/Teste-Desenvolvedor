@@ -10,28 +10,42 @@
 
 
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4" style="width: 800px;">
         <form asp-action="Criar">
-            <div class="form-group">
-                <label asp-for="TipoNegocio" class="control-label"><strong>Tipo de Anúncio</strong></label>
-                <select asp-for="TipoNegocio" class="form-select" aria-label="Default select example">
-                    <option selected>Selecione</option>
-                    <option value="Aluguel">Aluguel</option>
-                    <option value="Venda">Venda</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label asp-for="Cliente" class="control-label"><strong>Anunciante</strong></label>
-                <input asp-for="Cliente" class="form-control" />
+            <div>
+                <div class="form-group">
+                    <label asp-for="TipoNegocio" class="control-label" style="width: 100px;"><strong>Tipo de
+                            Anúncio</strong></label>
+                    <select asp-for="TipoNegocio" class="form-select" style="width: 300px;"
+                        aria-label="Default select example">
+                        <option selected>Selecione</option>
+                        <option value="Aluguel">Aluguel</option>
+                        <option value="Venda">Venda</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Cliente" class="control-label"
+                        style="width: 100px;"><strong>Anunciante</strong></label>
+                    <input asp-for="Cliente" class="form-control" style="width: 300px;" />
+                </div>
             </div>
             <div class="form-group">
                 <label asp-for="ValorImovel" class="control-label"><strong>Valor</strong></label>
                 <input asp-for="ValorImovel" class="form-control" />
             </div>
             <div class="form-group">
+                <label asp-for="Endereco" class="control-label"><strong>Endereço</strong></label>
+                <input asp-for="Endereco" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="DataPublicacao" class="control-label"><strong>Data de Publicação</strong></label>
+                <input asp-for="DataPublicacao" data-provide="datepicker" class="form-control" />
+            </div>
+            <div class="form-group">
                 <label asp-for="Descricao" class="control-label"><strong>Descrição</strong></label>
                 <textarea asp-for="Descricao" class="form-control" rows="3" placeholder="Sobre o imóvel..."></textarea>
             </div>
+
             <br>
             <div class="form-group">
                 <input type="submit" value="Cadastrar" class="btn btn-primary btn-sm" /> |
@@ -40,22 +54,4 @@
         </form>
         </hr>
     </div>
-    <div class="col-md-4">
-        <form asp-action="Criar">
-            <div class="form-group">
-                <div class="form-group">
-                    <label asp-for="Endereco" class="control-label"><strong>Endereço</strong></label>
-                    <input asp-for="Endereco" class="form-control" />
-                </div>
-
-                <div class="form-group">
-                    <label asp-for="DataPublicacao" class="control-label"><strong>Data de Publicação</strong></label>
-                    <input asp-for="DataPublicacao" data-provide="datepicker" class="form-control" />
-                </div>
-
-            </div>
-
-        </form>
-    </div>
-    
 </div>
