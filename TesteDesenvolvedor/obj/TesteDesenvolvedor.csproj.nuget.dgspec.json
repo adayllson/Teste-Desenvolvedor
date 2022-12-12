@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repositórios\\Teste-Desenvolvedor\\TesteDesenvolvedor\\TesteDesenvolvedor.csproj": {}
+    "D:\\Repositórios\\Teste-Desenvolvedor\\TesteDesenvolvedor\\TesteDesenvolvedor.csproj": {}
   },
   "projects": {
-    "C:\\Repositórios\\Teste-Desenvolvedor\\TesteDesenvolvedor\\TesteDesenvolvedor.csproj": {
+    "D:\\Repositórios\\Teste-Desenvolvedor\\TesteDesenvolvedor\\TesteDesenvolvedor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repositórios\\Teste-Desenvolvedor\\TesteDesenvolvedor\\TesteDesenvolvedor.csproj",
+        "projectUniqueName": "D:\\Repositórios\\Teste-Desenvolvedor\\TesteDesenvolvedor\\TesteDesenvolvedor.csproj",
         "projectName": "TesteDesenvolvedor",
-        "projectPath": "C:\\Repositórios\\Teste-Desenvolvedor\\TesteDesenvolvedor\\TesteDesenvolvedor.csproj",
+        "projectPath": "D:\\Repositórios\\Teste-Desenvolvedor\\TesteDesenvolvedor\\TesteDesenvolvedor.csproj",
         "packagesPath": "C:\\Users\\Adailson\\.nuget\\packages\\",
-        "outputPath": "C:\\Repositórios\\Teste-Desenvolvedor\\TesteDesenvolvedor\\obj\\",
+        "outputPath": "D:\\Repositórios\\Teste-Desenvolvedor\\TesteDesenvolvedor\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Adailson\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Adailson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,8 +62,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -68,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }
